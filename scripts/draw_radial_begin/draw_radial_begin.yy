@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_radial_begin",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_radial_begin",
+  "parent":{
+    "name":"RPB",
+    "path":"folders/Extensions/RPB.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

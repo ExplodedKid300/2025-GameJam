@@ -1,0 +1,47 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"Stone",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"Stone","closed_edge":false,"name":"Stone","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        173,201,200,203,177,181,246,205,178,247,158,204,180,227,228,249,172,199,176,245,150,154,155,157,174,
+        179,202,248,196,224,223,226,175,219,149,153,151,156,197,225,195,222,152,218,198,220,221,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"Path","closed_edge":false,"name":"Path","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        139,167,166,169,143,147,212,171,144,213,124,170,146,193,194,215,138,165,142,211,116,120,121,123,140,
+        145,168,214,162,190,189,192,141,185,115,119,117,122,163,191,161,188,118,184,164,186,187,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"Stone",
+  "out_columns":19,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"tileset",
+    "path":"sprites/tileset/tileset.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":345,
+}

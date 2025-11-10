@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_radial_a",
+  "name":"sh_radial_a",
+  "parent":{
+    "name":"RPB",
+    "path":"folders/Extensions/RPB.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

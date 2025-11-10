@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_texture_radial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_texture_radial",
+  "parent":{
+    "name":"RPB",
+    "path":"folders/Extensions/RPB.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

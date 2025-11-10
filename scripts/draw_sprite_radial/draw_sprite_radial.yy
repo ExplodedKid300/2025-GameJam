@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_sprite_radial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_sprite_radial",
+  "parent":{
+    "name":"RPB",
+    "path":"folders/Extensions/RPB.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
