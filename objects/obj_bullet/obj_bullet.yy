@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_splashEndCheck",
+  "%Name":"obj_bullet",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":76,"eventType":7,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_splashEndCheck",
+  "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"bullet",
+    "path":"sprites/bullet/bullet.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

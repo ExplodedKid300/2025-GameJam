@@ -7,10 +7,10 @@ if(sHealth > pHealth){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 23FA4B3E
 	/// @DnDParent : 17B4FF3E
-	/// @DnDArgument : "expr" "-0.08"
+	/// @DnDArgument : "expr" "-(mHealth/300)"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "sHealth"
-	sHealth += -0.08;}
+	sHealth += -(mHealth/300);}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
@@ -31,10 +31,10 @@ if(sShield > pShield){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7AFF9C91
 	/// @DnDParent : 1A4B5205
-	/// @DnDArgument : "expr" "-0.08"
+	/// @DnDArgument : "expr" "-(mShield/300)"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "sShield"
-	sShield += -0.08;}
+	sShield += -(mShield/300);}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
@@ -46,3 +46,16 @@ else{	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "expr" "pShield"
 	/// @DnDArgument : "var" "sShield"
 	sShield = pShield;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 6FCC83C3
+/// @DnDArgument : "expr" "pShield < mShield && hitCD <= 0"
+if(pShield < mShield && hitCD <= 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6908711D
+	/// @DnDParent : 6FCC83C3
+	/// @DnDArgument : "expr" "mShield/500"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "pShield"
+	pShield += mShield/500;}

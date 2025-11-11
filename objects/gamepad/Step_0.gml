@@ -1,16 +1,15 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 39A760D4
+/// @DnDArgument : "expr" "gamepad_is_connected(0)"
+/// @DnDArgument : "var" "Connected"
+Connected = gamepad_is_connected(0);
+
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 13FED56F
 /// @DnDArgument : "expr" "gamepad_is_connected(0)"
 if(gamepad_is_connected(0)){	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 39A760D4
-	/// @DnDParent : 13FED56F
-	/// @DnDArgument : "expr" "1"
-	/// @DnDArgument : "var" "Connected"
-	Connected = 1;
-
-	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3D9EACC7
 	/// @DnDInput : 6

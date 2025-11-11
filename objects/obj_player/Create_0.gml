@@ -1,3 +1,16 @@
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 7E7002AE
+/// @DnDArgument : "function" "audio_group_load"
+/// @DnDArgument : "arg" "SFX"
+audio_group_load(SFX);
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 738C0191
+/// @DnDArgument : "var" "pGunID"
+pGunID = 0;
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 12FB6A99
@@ -18,7 +31,7 @@ aimDir = 0;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 590E946D
-/// @DnDInput : 9
+/// @DnDInput : 10
 /// @DnDArgument : "expr" "25"
 /// @DnDArgument : "expr_1" "10"
 /// @DnDArgument : "expr_2" "18"
@@ -37,6 +50,7 @@ aimDir = 0;
 /// @DnDArgument : "var_6" "sHealth"
 /// @DnDArgument : "var_7" "sShield"
 /// @DnDArgument : "var_8" "pRes"
+/// @DnDArgument : "var_9" "hitCD"
 mHealth = 25;
 mShield = 10;
 mMag = 18;
@@ -46,13 +60,22 @@ pMag = mMag;
 sHealth = mHealth;
 sShield = mShield;
 pRes = 680;
+hitCD = 0;
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 61D084C7
 /// @DnDArgument : "funcName" "fun_takeDamage"
 /// @DnDArgument : "arg" "dmg"
-function fun_takeDamage(dmg) {	/// @DnDAction : YoYo Games.Common.If_Expression
+function fun_takeDamage(dmg) {	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4D2135CC
+	/// @DnDParent : 61D084C7
+	/// @DnDArgument : "expr" "5"
+	/// @DnDArgument : "var" "hitCD"
+	hitCD = 5;
+
+	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 683862DA
 	/// @DnDParent : 61D084C7
