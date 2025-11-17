@@ -45,7 +45,7 @@
   "name":"itch 2025 GameJam",
   "resources":[
     {"id":{"name":"OCR_A","path":"fonts/OCR_A/OCR_A.yy",},},
-    {"id":{"name":"CREDITS","path":"notes/CREDITS/CREDITS.yy",},},
+    {"id":{"name":"README","path":"notes/README/README.yy",},},
     {"id":{"name":"gamepad","path":"objects/gamepad/gamepad.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
