@@ -152,16 +152,3 @@ if(!(fun_tileSolid(x - colW, newY - colH, tmCol) || fun_tileSolid(x + colW, newY
 	/// @DnDArgument : "expr" "newY"
 	/// @DnDArgument : "var" "y"
 	y = newY;}
-
-/// @DnDAction : YoYo Games.Common.If_Expression
-/// @DnDVersion : 1
-/// @DnDHash : 209D29F3
-/// @DnDArgument : "expr" "hitCD > 0"
-if(hitCD > 0){	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 1ECBC71B
-	/// @DnDParent : 209D29F3
-	/// @DnDArgument : "expr" "-1/room_speed"
-	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "hitCD"
-	hitCD += -1/room_speed;}

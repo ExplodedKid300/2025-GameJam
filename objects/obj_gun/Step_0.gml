@@ -51,7 +51,7 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 	case "Pistol":	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 715DD524
-		/// @DnDInput : 6
+		/// @DnDInput : 7
 		/// @DnDParent : 0CE73885
 		/// @DnDArgument : "expr" "10"
 		/// @DnDArgument : "expr_1" "[1,0,0]"
@@ -59,18 +59,21 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 		/// @DnDArgument : "expr_3" "10"
 		/// @DnDArgument : "expr_4" "5"
 		/// @DnDArgument : "expr_5" "18"
+		/// @DnDArgument : "expr_6" "3"
 		/// @DnDArgument : "var" "fireRate"
 		/// @DnDArgument : "var_1" "modeSupport"
 		/// @DnDArgument : "var_2" "projectileSpeed"
 		/// @DnDArgument : "var_3" "baseDamage"
 		/// @DnDArgument : "var_4" "bulletSpread"
 		/// @DnDArgument : "var_5" "maxMag"
+		/// @DnDArgument : "var_6" "reloadTime"
 		fireRate = 10;
 		modeSupport = [1,0,0];
 		projectileSpeed = 15;
 		baseDamage = 10;
 		bulletSpread = 5;
-		maxMag = 18;	break;
+		maxMag = 18;
+		reloadTime = 3;	break;
 
 	/// @DnDAction : YoYo Games.Switch.Case
 	/// @DnDVersion : 1
@@ -80,7 +83,7 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 	case "AR":	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 296AEAB8
-		/// @DnDInput : 6
+		/// @DnDInput : 7
 		/// @DnDParent : 25D86BF4
 		/// @DnDArgument : "expr" "12"
 		/// @DnDArgument : "expr_1" "[1,3,1]"
@@ -88,18 +91,21 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 		/// @DnDArgument : "expr_3" "8"
 		/// @DnDArgument : "expr_4" "7"
 		/// @DnDArgument : "expr_5" "26"
+		/// @DnDArgument : "expr_6" "5"
 		/// @DnDArgument : "var" "fireRate"
 		/// @DnDArgument : "var_1" "modeSupport"
 		/// @DnDArgument : "var_2" "projectileSpeed"
 		/// @DnDArgument : "var_3" "baseDamage"
 		/// @DnDArgument : "var_4" "bulletSpread"
 		/// @DnDArgument : "var_5" "maxMag"
+		/// @DnDArgument : "var_6" "reloadTime"
 		fireRate = 12;
 		modeSupport = [1,3,1];
 		projectileSpeed = 17;
 		baseDamage = 8;
 		bulletSpread = 7;
-		maxMag = 26;	break;
+		maxMag = 26;
+		reloadTime = 5;	break;
 
 	/// @DnDAction : YoYo Games.Switch.Case
 	/// @DnDVersion : 1
@@ -109,7 +115,7 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 	case "SMG":	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 45F03B5E
-		/// @DnDInput : 6
+		/// @DnDInput : 7
 		/// @DnDParent : 14E94CA0
 		/// @DnDArgument : "expr" "15"
 		/// @DnDArgument : "expr_1" "[1,5,1]"
@@ -117,15 +123,18 @@ var l63F090D6_0 = gList[gID];switch(l63F090D6_0){	/// @DnDAction : YoYo Games
 		/// @DnDArgument : "expr_3" "6"
 		/// @DnDArgument : "expr_4" "9"
 		/// @DnDArgument : "expr_5" "31"
+		/// @DnDArgument : "expr_6" "4"
 		/// @DnDArgument : "var" "fireRate"
 		/// @DnDArgument : "var_1" "modeSupport"
 		/// @DnDArgument : "var_2" "projectileSpeed"
 		/// @DnDArgument : "var_3" "baseDamage"
 		/// @DnDArgument : "var_4" "bulletSpread"
 		/// @DnDArgument : "var_5" "maxMag"
+		/// @DnDArgument : "var_6" "reloadTime"
 		fireRate = 15;
 		modeSupport = [1,5,1];
 		projectileSpeed = 19;
 		baseDamage = 6;
 		bulletSpread = 9;
-		maxMag = 31;	break;}
+		maxMag = 31;
+		reloadTime = 4;	break;}

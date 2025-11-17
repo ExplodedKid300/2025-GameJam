@@ -31,7 +31,7 @@ aimDir = 0;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 590E946D
-/// @DnDInput : 10
+/// @DnDInput : 12
 /// @DnDArgument : "expr" "25"
 /// @DnDArgument : "expr_1" "10"
 /// @DnDArgument : "expr_2" "18"
@@ -51,6 +51,8 @@ aimDir = 0;
 /// @DnDArgument : "var_7" "sShield"
 /// @DnDArgument : "var_8" "pRes"
 /// @DnDArgument : "var_9" "hitCD"
+/// @DnDArgument : "var_10" "isReloading"
+/// @DnDArgument : "var_11" "reloadTimer"
 mHealth = 25;
 mShield = 10;
 mMag = 18;
@@ -61,6 +63,8 @@ sHealth = mHealth;
 sShield = mShield;
 pRes = 680;
 hitCD = 0;
+isReloading = 0;
+reloadTimer = 0;
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1

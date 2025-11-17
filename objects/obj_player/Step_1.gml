@@ -59,3 +59,59 @@ if(pShield < mShield && hitCD <= 0){	/// @DnDAction : YoYo Games.Common.Variab
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "pShield"
 	pShield += mShield/500;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 6B18FC3E
+/// @DnDArgument : "expr" "hitCD > 0"
+if(hitCD > 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5DA92DE7
+	/// @DnDParent : 6B18FC3E
+	/// @DnDArgument : "expr" "-1/room_speed"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "hitCD"
+	hitCD += -1/room_speed;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 44C8F09D
+/// @DnDArgument : "expr" "reloadTimer > 0"
+if(reloadTimer > 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6D49B5E8
+	/// @DnDParent : 44C8F09D
+	/// @DnDArgument : "expr" "-1/room_speed"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "reloadTimer"
+	reloadTimer += -1/room_speed;
+
+	/// @DnDAction : YoYo Games.Common.If_Expression
+	/// @DnDVersion : 1
+	/// @DnDHash : 4953E166
+	/// @DnDParent : 44C8F09D
+	/// @DnDArgument : "expr" "reloadTimer <= 0"
+	if(reloadTimer <= 0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 75BE2660
+		/// @DnDParent : 4953E166
+		/// @DnDArgument : "soundid" "GunClickSFX"
+		/// @DnDArgument : "pitch" "1.5"
+		/// @DnDSaveInfo : "soundid" "GunClickSFX"
+		audio_play_sound(GunClickSFX, 0, 0, 1.0, undefined, 1.5);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 67E30A7B
+		/// @DnDInput : 3
+		/// @DnDParent : 4953E166
+		/// @DnDArgument : "expr_1" "-(min(mMag - pMag, mMag - 1))"
+		/// @DnDArgument : "expr_relative_1" "1"
+		/// @DnDArgument : "expr_2" "(min(mMag - pMag, mMag - 1))"
+		/// @DnDArgument : "expr_relative_2" "1"
+		/// @DnDArgument : "var" "isReloading"
+		/// @DnDArgument : "var_1" "pRes"
+		/// @DnDArgument : "var_2" "pMag"
+		isReloading = 0;
+		pRes += -(min(mMag - pMag, mMag - 1));
+		pMag += (min(mMag - pMag, mMag - 1));}}
