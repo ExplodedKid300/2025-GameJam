@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 439D53EB
+/// @DnDArgument : "expr" "[]"
+/// @DnDArgument : "var" "cards"
+cards = [];
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 7E7002AE

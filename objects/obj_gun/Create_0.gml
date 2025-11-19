@@ -30,7 +30,7 @@
 /// @DnDInput : 10
 /// @DnDArgument : "expr_1" "[1,0,0]"
 /// @DnDArgument : "expr_2" "modeSupport[1]"
-/// @DnDArgument : "expr_3" "3*fireRate"
+/// @DnDArgument : "expr_3" "4*fireRate"
 /// @DnDArgument : "var" "fireRate"
 /// @DnDArgument : "var_1" "modeSupport"
 /// @DnDArgument : "var_2" "burstSize"
@@ -44,7 +44,7 @@
 fireRate = 0;
 modeSupport = [1,0,0];
 burstSize = modeSupport[1];
-burstInterval = 3*fireRate;
+burstInterval = 4*fireRate;
 projectileSpeed = 0;
 baseDamage = 0;
 bulletSpread = 0;
