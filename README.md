@@ -1,0 +1,1 @@
+C:/Users/ExplodedKid/GameMakerProjects/itch 2025 GameJam/notes/README/README.txt
