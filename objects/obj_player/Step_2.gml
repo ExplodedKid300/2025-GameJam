@@ -3,13 +3,13 @@
 /// @DnDHash : 4AEA931E
 /// @DnDInput : 3
 /// @DnDArgument : "expr" "(gamepad_is_connected(0) ? gamepad.RT : mouse_check_button(mb_left)) && !(isReloading)"
-/// @DnDArgument : "expr_1" "gamepad_is_connected(0) ? gamepad.X : mouse_check_button(mb_right) || keyboard_check_pressed(ord("R"))"
+/// @DnDArgument : "expr_1" "gamepad_is_connected(0) ? gamepad.X : mouse_check_button_pressed(mb_right) || keyboard_check_pressed(ord("R"))"
 /// @DnDArgument : "expr_2" "gamepad_is_connected(0) ? gamepad.A : keyboard_check_pressed(ord("E"))"
 /// @DnDArgument : "var" "_trigger"
 /// @DnDArgument : "var_1" "_reload"
 /// @DnDArgument : "var_2" "_interact"
 _trigger = (gamepad_is_connected(0) ? gamepad.RT : mouse_check_button(mb_left)) && !(isReloading);
-_reload = gamepad_is_connected(0) ? gamepad.X : mouse_check_button(mb_right) || keyboard_check_pressed(ord("R"));
+_reload = gamepad_is_connected(0) ? gamepad.X : mouse_check_button_pressed(mb_right) || keyboard_check_pressed(ord("R"));
 _interact = gamepad_is_connected(0) ? gamepad.A : keyboard_check_pressed(ord("E"));
 
 /// @DnDAction : YoYo Games.Common.If_Expression
@@ -56,8 +56,8 @@ if((_trigger && obj_gun.shootCD <= 0) && pMag > 0){	/// @DnDAction : YoYo Game
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 3CFB409A
-/// @DnDArgument : "expr" "_reload && pMag < mMag"
-if(_reload && pMag < mMag){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "!isReloading && (_reload && pMag < mMag)"
+if(!isReloading && (_reload && pMag < mMag)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 349F7181
 	/// @DnDInput : 2

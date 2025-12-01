@@ -1,9 +1,15 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 439D53EB
-/// @DnDArgument : "expr" "[]"
+/// @DnDArgument : "expr" "[1,2,3,4]"
 /// @DnDArgument : "var" "cards"
-cards = [];
+cards = [1,2,3,4];
+
+/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDVersion : 1
+/// @DnDHash : 1E9AA086
+/// @DnDArgument : "msg" "array_length(cards)"
+show_debug_message(string(array_length(cards)));
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
@@ -28,12 +34,14 @@ tmCol = layer_tilemap_get_id("Walls");
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 026EA02F
-/// @DnDInput : 2
+/// @DnDInput : 3
 /// @DnDArgument : "expr" "5"
 /// @DnDArgument : "var" "moveSpd"
 /// @DnDArgument : "var_1" "aimDir"
+/// @DnDArgument : "var_2" "critChance"
 moveSpd = 5;
 aimDir = 0;
+critChance = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -72,41 +80,3 @@ pRes = 680;
 hitCD = 0;
 isReloading = 0;
 reloadTimer = 0;
-
-/// @DnDAction : YoYo Games.Common.Function
-/// @DnDVersion : 1
-/// @DnDHash : 61D084C7
-/// @DnDArgument : "funcName" "fun_takeDamage"
-/// @DnDArgument : "arg" "dmg"
-function fun_takeDamage(dmg) {	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 4D2135CC
-	/// @DnDParent : 61D084C7
-	/// @DnDArgument : "expr" "5"
-	/// @DnDArgument : "var" "hitCD"
-	hitCD = 5;
-
-	/// @DnDAction : YoYo Games.Common.If_Expression
-	/// @DnDVersion : 1
-	/// @DnDHash : 683862DA
-	/// @DnDParent : 61D084C7
-	/// @DnDArgument : "expr" "pShield > 0"
-	if(pShield > 0){	/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 20668420
-		/// @DnDParent : 683862DA
-		/// @DnDArgument : "expr" "dmg > pShield ? 0 : pShield - dmg "
-		/// @DnDArgument : "var" "pShield"
-		pShield = dmg > pShield ? 0 : pShield - dmg ;}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 600DC0A8
-	/// @DnDParent : 61D084C7
-	else{	/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 01EA1C5C
-		/// @DnDParent : 600DC0A8
-		/// @DnDArgument : "expr" "dmg > pHealth ? 0 : pHealth - dmg "
-		/// @DnDArgument : "var" "pHealth"
-		pHealth = dmg > pHealth ? 0 : pHealth - dmg ;}}
