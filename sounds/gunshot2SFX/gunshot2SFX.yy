@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"gunshot2SFX",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.4249432,
+  "exportDir":"",
+  "name":"gunshot2SFX",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Sounds/SFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"gunshot2SFX.wav",
+  "volume":1.0,
+}

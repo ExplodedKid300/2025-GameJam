@@ -261,11 +261,11 @@ for(i = 0; i < array_length(obj_player.cards); i += 1) {	/// @DnDAction : YoYo 
 	/// @DnDArgument : "var_2" "xPos"
 	/// @DnDArgument : "value_2" "400+(col*cardSpacing)"
 	/// @DnDArgument : "var_3" "yPos"
-	/// @DnDArgument : "value_3" "10+(row*rowSpacing)"
+	/// @DnDArgument : "value_3" "40+(row*rowSpacing)"
 	var row = floor(i/perRow);
 	var col = i mod perRow;
 	var xPos = 400+(col*cardSpacing);
-	var yPos = 10+(row*rowSpacing);
+	var yPos = 40+(row*rowSpacing);
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
 	/// @DnDVersion : 1
@@ -275,17 +275,17 @@ for(i = 0; i < array_length(obj_player.cards); i += 1) {	/// @DnDAction : YoYo 
 	/// @DnDArgument : "y" "yPos"
 	/// @DnDArgument : "xscale" "scale"
 	/// @DnDArgument : "yscale" "scale"
-	/// @DnDArgument : "sprite" "Sprite11"
+	/// @DnDArgument : "sprite" "spr_cards"
 	/// @DnDArgument : "frame" "obj_player.cards[i]"
-	/// @DnDSaveInfo : "sprite" "Sprite11"
-	draw_sprite_ext(Sprite11, obj_player.cards[i], xPos, yPos, scale, scale, 0, $FFFFFF & $ffffff, 1);
+	/// @DnDSaveInfo : "sprite" "spr_cards"
+	draw_sprite_ext(spr_cards, obj_player.cards[i], xPos, yPos, scale, scale, 0, $FFFFFF & $ffffff, 1);
 
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 236F6DD6
 	/// @DnDParent : 0FF9D919
-	/// @DnDArgument : "expr" "mouse_x > xPos - (sprite_get_width(Sprite11) * scale)/2 && mouse_x < xPos + (sprite_get_width(Sprite11) * scale)/2 && mouse_y > yPos - (sprite_get_height(Sprite11) * scale)/2 && mouse_y < yPos + (sprite_get_height(Sprite11) * scale)/2"
-	if(mouse_x > xPos - (sprite_get_width(Sprite11) * scale)/2 && mouse_x < xPos + (sprite_get_width(Sprite11) * scale)/2 && mouse_y > yPos - (sprite_get_height(Sprite11) * scale)/2 && mouse_y < yPos + (sprite_get_height(Sprite11) * scale)/2){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDArgument : "expr" "mouse_x > xPos - (sprite_get_width(spr_cards) * scale)/2 && mouse_x < xPos + (sprite_get_width(spr_cards) * scale)/2 && mouse_y > yPos - (sprite_get_height(spr_cards) * scale)/2 && mouse_y < yPos + (sprite_get_height(spr_cards) * scale)/2"
+	if(mouse_x > xPos - (sprite_get_width(spr_cards) * scale)/2 && mouse_x < xPos + (sprite_get_width(spr_cards) * scale)/2 && mouse_y > yPos - (sprite_get_height(spr_cards) * scale)/2 && mouse_y < yPos + (sprite_get_height(spr_cards) * scale)/2){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 289493DC
 		/// @DnDParent : 236F6DD6
@@ -306,10 +306,10 @@ for(i = 0; i < array_length(obj_player.cards); i += 1) {	/// @DnDAction : YoYo 
 		/// @DnDArgument : "y" "zoomY"
 		/// @DnDArgument : "xscale" "zoomScale"
 		/// @DnDArgument : "yscale" "zoomScale"
-		/// @DnDArgument : "sprite" "Sprite11"
+		/// @DnDArgument : "sprite" "spr_cards"
 		/// @DnDArgument : "frame" "hoveredID"
-		/// @DnDSaveInfo : "sprite" "Sprite11"
-		draw_sprite_ext(Sprite11, hoveredID, zoomX, zoomY, zoomScale, zoomScale, 0, $FFFFFF & $ffffff, 1);}}
+		/// @DnDSaveInfo : "sprite" "spr_cards"
+		draw_sprite_ext(spr_cards, hoveredID, zoomX, zoomY, zoomScale, zoomScale, 0, $FFFFFF & $ffffff, 1);}}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1

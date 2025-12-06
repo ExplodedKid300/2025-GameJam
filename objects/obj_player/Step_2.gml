@@ -37,10 +37,10 @@ if((_trigger && obj_gun.shootCD <= 0) && pMag > 0){	/// @DnDAction : YoYo Game
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 0221AD55
 	/// @DnDParent : 539412B2
-	/// @DnDArgument : "soundid" "gunshotSFX"
+	/// @DnDArgument : "soundid" "gunshot2SFX"
 	/// @DnDArgument : "pitch" "random_range(0.75, 1.25)"
-	/// @DnDSaveInfo : "soundid" "gunshotSFX"
-	audio_play_sound(gunshotSFX, 0, 0, 1.0, undefined, random_range(0.75, 1.25));
+	/// @DnDSaveInfo : "soundid" "gunshot2SFX"
+	audio_play_sound(gunshot2SFX, 0, 0, 1.0, undefined, random_range(0.75, 1.25));
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
@@ -48,10 +48,20 @@ if((_trigger && obj_gun.shootCD <= 0) && pMag > 0){	/// @DnDAction : YoYo Game
 	/// @DnDParent : 539412B2
 	/// @DnDArgument : "xpos_relative" "1"
 	/// @DnDArgument : "ypos_relative" "1"
+	/// @DnDArgument : "var" "b"
+	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "objectid" "obj_bullet"
 	/// @DnDArgument : "layer" ""Bullets""
 	/// @DnDSaveInfo : "objectid" "obj_bullet"
-	instance_create_layer(x + 0, y + 0, "Bullets", obj_bullet);}
+	var b = instance_create_layer(x + 0, y + 0, "Bullets", obj_bullet);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 784723EC
+	/// @DnDParent : 539412B2
+	/// @DnDArgument : "expr" "self"
+	/// @DnDArgument : "var" "b.source"
+	b.source = self;}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1

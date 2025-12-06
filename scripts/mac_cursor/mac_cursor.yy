@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mac_cursor",
+  "isCompatibility":false,
+  "isDnD":true,
+  "name":"mac_cursor",
+  "parent":{
+    "name":"Macros",
+    "path":"folders/Scripts/Macros.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

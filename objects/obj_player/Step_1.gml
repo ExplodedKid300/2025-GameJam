@@ -1,5 +1,25 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
+/// @DnDHash : 1121876C
+/// @DnDArgument : "expr" "hitCD > 0"
+if(hitCD > 0){	/// @DnDAction : YoYo Games.Instances.Sprite_Image_Alpha
+	/// @DnDVersion : 1
+	/// @DnDHash : 738BC6C0
+	/// @DnDParent : 1121876C
+	/// @DnDArgument : "alpha" "0.5"
+	image_alpha = 0.5;}
+
+/// @DnDAction : YoYo Games.Common.Else
+/// @DnDVersion : 1
+/// @DnDHash : 36C4F982
+else{	/// @DnDAction : YoYo Games.Instances.Sprite_Image_Alpha
+	/// @DnDVersion : 1
+	/// @DnDHash : 14550E8C
+	/// @DnDParent : 36C4F982
+	image_alpha = 1;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
 /// @DnDHash : 17B4FF3E
 /// @DnDComment : ==========$(13_10)Stats$(13_10)==========
 /// @DnDArgument : "expr" "sHealth > pHealth"
@@ -26,8 +46,8 @@ else{	/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 1A4B5205
-/// @DnDArgument : "expr" "sShield > pShield"
-if(sShield > pShield){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "sShield > pShield && pHealth > 0"
+if(sShield > pShield && pHealth > 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7AFF9C91
 	/// @DnDParent : 1A4B5205
@@ -50,8 +70,8 @@ else{	/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 6FCC83C3
-/// @DnDArgument : "expr" "pShield < mShield && hitCD <= 0"
-if(pShield < mShield && hitCD <= 0){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "pShield < mShield && shieldCD <= 0"
+if(pShield < mShield && shieldCD <= 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6908711D
 	/// @DnDParent : 6FCC83C3
@@ -72,6 +92,19 @@ if(hitCD > 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "hitCD"
 	hitCD += -1/room_speed;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 1C241E91
+/// @DnDArgument : "expr" "shieldCD > 0"
+if(shieldCD > 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 389405C2
+	/// @DnDParent : 1C241E91
+	/// @DnDArgument : "expr" "-1/room_speed"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "shieldCD"
+	shieldCD += -1/room_speed;}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
